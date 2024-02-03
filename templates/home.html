@@ -2,15 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Data API</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #007BFF;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        code {
+            background-color: #f8f9fa;
+            padding: 2px 5px;
+            border: 1px solid #d6d8db;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
 </head>
 <body>
-<h1>
+    <div>
+        <h1>Weather Data API</h1>
 
-   WEATHER DATA API BY : RAYEH MOHAMMED RIAD
-    </h1>
+        <p>API Endpoints:</p>
+        <ul>
+            <li>
+                <code>http://127.0.0.1:5000/api/v1/station/date</code>
+            </li>
+            <li>
+                <code>http://127.0.0.1:5000/api/v1/10/1988-10-25</code>
+            </li>
+        </ul>
 
-    <p> URL FORMAT: http:127.0.0.1:5000/api/v1/station/date</p>
- <p> URL FORMAT: http:127.0.0.1:5000/api/v1/10/19881025</p>
+        <p>Data:</p>
+        <div>
+            {{ data|safe }}
+        </div>
+    </div>
 </body>
 </html>
